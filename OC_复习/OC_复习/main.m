@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@interface Ss: NSObject {
+    @public
+    NSString *_name;
+    int _age;
+    float _height;
+}
+
+@end
+
+@implementation Ss
+
+@end
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -15,7 +28,25 @@ int main(int argc, const char * argv[]) {
         
         // NSString 复习
         NSString *string = @"abcdefghijklmn";
+        NSLog(@"%@", string);
         
+        Ss *p1 = [Ss new];
+        p1->_name = @"jack";
+        NSLog(@"p1的名字是%@", p1->_name);
+        
+        /*
+        
+        // 内存中的五大区域
+         堆 存储程序员手动申请的字节空间 malloc calloc realloc函数
+         栈 存储局部变量
+         BSS区域 存储未被初始化的全局变量和静态变量
+         常量区 已经被初始化的全局变量和静态变量和常量
+         代码段
+        
+        // 类加载
+         
+        
+        */
         
         
     }
