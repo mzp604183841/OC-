@@ -34,7 +34,19 @@ int main(int argc, const char * argv[]) {
         p1->_name = @"jack";
         NSLog(@"p1的名字是%@", p1->_name);
         
+        /*
         
+        // 内存中的五大区域
+         堆 存储程序员手动申请的字节空间 malloc calloc realloc函数
+         栈 存储局部变量
+         BSS区域 存储未被初始化的全局变量和静态变量
+         常量区 已经被初始化的全局变量和静态变量和常量
+         代码段
+        
+        // 类加载
+         
+        
+        */
         
         
     }
