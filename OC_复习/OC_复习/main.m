@@ -49,7 +49,7 @@ int main(int argc, const char * argv[]) {
          创建一个新的feature1分支，写下第一段话。
          
          // dev 我要实验新的merge方法 --no-ff 这是什么意思呢 稍后揭晓
-         
+         // dev2 所以你现在知道--no-ff 是什么意思了吧，每次切出去的分支想要合并到master上时，都是用普通模式去合并的，git merge --no-ff -m “信息” dev 保留merge信息。
         */
         
         
