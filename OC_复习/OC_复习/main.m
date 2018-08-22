@@ -52,7 +52,6 @@ int main(int argc, const char * argv[]) {
          // dev2 所以你现在知道--no-ff 是什么意思了吧，每次切出去的分支想要合并到master上时，都是用普通模式去合并的，git merge --no-ff -m “信息” dev 保留merge信息。
          
          // dev分支上要切bug分支
-         // dev上有一个bug-虫子
          
         */
         
