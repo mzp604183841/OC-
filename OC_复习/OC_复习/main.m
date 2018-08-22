@@ -47,6 +47,9 @@ int main(int argc, const char * argv[]) {
          当初始化一个对象时，CPU会到内存的代码段区域加载类文件，这个过程叫做类加载。
          我回到了master分支，写了第二句话。
          创建一个新的feature1分支，写下第一段话。
+         
+         // dev 我要实验新的merge方法 --no-ff 这是什么意思呢 稍后揭晓
+         
         */
         
         
