@@ -53,6 +53,8 @@ int main(int argc, const char * argv[]) {
          
          // dev分支上要切bug分支
          
+         // git ---- .gitignore文件，可以忽略掉频繁出现的缓存文件，已经在我的GitHub上标星了
+         
         */
         
         
