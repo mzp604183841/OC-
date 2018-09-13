@@ -23,6 +23,7 @@
 
 - (void)sayHi {
     NSLog(@"hello world");
+    NSLog(@"hello world");
 }
 
 @end
