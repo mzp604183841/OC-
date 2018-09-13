@@ -24,23 +24,6 @@
 - (void)sayHi {
     NSLog(@"hello world");
     NSLog(@"hello world");
-    // hahahahahahahaha
-    // 1
-    // 2
-    // 3
-    // 4
-    
-    // dev1
-    // dev2
-    
-    // m1
-    
-    // mzp222
-    // mzp111
-    
-    // master 写了第一句话
-    // master 写了第二句话
-    // dev 写了第一句话
 }
 
 @end
