@@ -24,7 +24,9 @@
 - (void)sayHi {
     NSLog(@"hello world");
     NSLog(@"hello world");
-    // hahahahahahahaha 
+    // hahahahahahahaha
+    // 1
+    // 2
 }
 
 @end
