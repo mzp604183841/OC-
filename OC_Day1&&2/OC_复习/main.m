@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark
+
+
 @interface Person: NSObject {
     @public
     NSString *_name;
@@ -34,6 +37,8 @@ int main(int argc, const char * argv[]) {
         p1->_name = @"jack";
         NSLog(@"p1的名字是%@", p1->_name);
         
+        int *p = nil;
+        
         /*
         
         // 内存中的五大区域
@@ -49,7 +54,30 @@ int main(int argc, const char * argv[]) {
          
         // 对象在内存中的存储
          Person *p1 = [Person new];
-         1).Pers
+         1) Person *p1 会在栈中申请一块空间 声明一个P指针变量, p1是一个指针变量,存储地址
+         2) [Person new] 真正在内存中创建对象的是这句
+            new  a. 在堆内存中 申请一块合适大小的空间  alloc
+                 b. 在这个空间中,根据类的模板来创建对象.  init
+                 c. 类模板中 定义了什么属性, 就依次声明在对象中
+         
+        // nil && NULL
+         NULL 只能作为指针变量的值 如果一个指针的值是NULL:代表这个指针不指向内存中的任何空间
+         NULL 等价于零  是一个宏
+         nil 只能作为指针变量的值  代表指针变量不指向内存中的任何空间  其实两者等价，但是不建议随便乱用
+         建议：
+         c指针用NULL  int *p = NULL;
+         OC指针用nil  Person *p = nil;
+         
+         Person *p = nil; 如果一个指针类型的值为nil，代表他不指向任何对象，此时用它访问对象的属性，编译器报错~！！！！
+         [p sayHi];   调用兑现的方法，运行不会报错，但是方法不会执行。这是OC的特性。
+         
+         同类型的指针变量可以相互赋值
+         
+         
+         // 属性的本质是变量，
+         创建对象的时候，对象中的属性是按照类模板中规定的类型一次创建属性
+         如果对象的属性是另外一个对象的属性，这个属性只是一个指针变量，并没有实际的对象产生
+         
          
          // GIT 复习
          我回到了master分支，写了第二句话。
